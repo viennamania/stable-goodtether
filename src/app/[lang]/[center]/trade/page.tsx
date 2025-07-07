@@ -179,7 +179,7 @@ export default function Index({ params }: any) {
     // the chain the contract is deployed on
     
     
-    chain: arbitrum ,
+    chain: bsc,
   
   
   
@@ -1220,7 +1220,7 @@ export default function Index({ params }: any) {
         /*
         const transactionResult = await waitForReceipt({
           client,
-          chain: arbitrum ,
+          chain: bsc,
           maxBlocksWaitTime: 1,
           transactionHash: transactionHash,
         });

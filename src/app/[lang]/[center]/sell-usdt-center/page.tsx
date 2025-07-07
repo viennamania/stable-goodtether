@@ -111,7 +111,7 @@ export default function SendUsdt({ params }: any) {
     // the chain the contract is deployed on
     
     
-    chain: arbitrum ,
+    chain: bsc,
   
   
   

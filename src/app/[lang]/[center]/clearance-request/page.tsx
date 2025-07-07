@@ -1371,7 +1371,7 @@ export default function Index({ params }: any) {
           /*
           const transactionResult = await waitForReceipt({
             client,
-            chain: arbitrum ,
+            chain: bsc,
             maxBlocksWaitTime: 1,
             transactionHash: transactionHash,
           });

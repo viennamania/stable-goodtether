@@ -195,7 +195,7 @@ export default function Index({ params }: any) {
       // the chain the contract is deployed on
       
       
-      chain: arbitrum ,
+      chain: bsc,
     
     
     

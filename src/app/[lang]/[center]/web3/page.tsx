@@ -98,7 +98,7 @@ export default function SettingsPage({ params }: any) {
         // the chain the contract is deployed on
         
         
-        chain: arbitrum ,
+        chain: bsc,
       
       
       
@@ -1105,7 +1105,7 @@ export default function SettingsPage({ params }: any) {
 
                             /*
                             accountAbstraction={{   
-                                chain: arbitrum ,
+                                chain: bsc,
                                 //
                                 //chain: bsc,
 
