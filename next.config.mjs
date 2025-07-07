@@ -19,6 +19,7 @@ const nextConfig = {
       "cryptoss.beauty",
       "t0gqytzvlsa2lapo.public.blob.vercel-storage.com",
       "stable.makeup",
+      "www.cryptopay.beauty",
     ],
   },
 

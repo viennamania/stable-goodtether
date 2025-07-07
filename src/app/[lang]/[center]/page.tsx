@@ -875,7 +875,7 @@ export default function Index({ params }: any) {
                       connectModal={{
                         size: "wide", 
                         //size: "compact",
-                        titleIcon: "https://www.stable.makeup/logo-oneclick.png",                           
+                        titleIcon: "https://www.cryptopay.beauty/logo-oneclick.png",                           
                         showThirdwebBranding: false,
                       }}
 
@@ -1152,7 +1152,7 @@ export default function Index({ params }: any) {
                     connectModal={{
                       size: "wide", 
                       //size: "compact",
-                      titleIcon: "https://www.stable.makeup/logo-oneclick.png",                           
+                      titleIcon: "https://www.cryptopay.beauty/logo-oneclick.png",                           
                       showThirdwebBranding: false,
                     }}
 

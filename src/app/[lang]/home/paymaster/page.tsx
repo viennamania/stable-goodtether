@@ -747,8 +747,8 @@ export default function Index({ params }: any) {
     "storeType": "test",
     "storeUrl": "https://test.com",
     "storeDescription": "설명입니다.",
-    "storeLogo": "https://www.stable.makeup/logo-oneclick.png",
-    "storeBanner": "https://www.stable.makeup/logo-oneclick.png",
+    "storeLogo": "https://www.cryptopay.beauty/logo-oneclick.png",
+    "storeBanner": "https://www.cryptopay.beauty/logo-oneclick.png",
     "createdAt": "2025-05-07T10:58:28.019Z"
     }
     */
@@ -2281,7 +2281,7 @@ export default function Index({ params }: any) {
                           connectModal={{
                             size: "wide", 
                             //size: "compact",
-                            titleIcon: "https://www.stable.makeup/logo-oneclick.png",                           
+                            titleIcon: "https://www.cryptopay.beauty/logo-oneclick.png",                           
                             showThirdwebBranding: false,
                           }}
 
