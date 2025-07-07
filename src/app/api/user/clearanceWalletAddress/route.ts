@@ -5,7 +5,11 @@ import { getOneByWalletAddress } from "@/lib/api/user";
 
 import { getStoreByStorecode } from "@/lib/api/store";
 
-import { polygon, arbitrum } from "thirdweb/chains";
+import {
+    polygon,
+    arbitrum,
+    bsc,
+} from "thirdweb/chains";
 
 
 
@@ -77,8 +81,7 @@ export async function POST(request: NextRequest) {
 
   const contractAddressPolygon = "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"; // USDT on Polygon
 
-  const contractAddressArbitrum = "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"; // USDT on Arbitrum
-
+  const contractAddressBsc = "0x55d398326f99059fF775485246999027B3197955"; // USDT on BSC
   const contractAddress = contractAddressPolygon;
 
 
@@ -116,7 +119,7 @@ export async function POST(request: NextRequest) {
     }
 
     const wallet = smartWallet({
-        chain: arbitrum,
+        chain: bsc,
         ///factoryAddress: "0x655934C0B4bD79f52A2f7e6E60714175D5dd319b", // your own deployed account factory address
         sponsorGas: true,
     });
@@ -154,8 +157,8 @@ export async function POST(request: NextRequest) {
     const balance = await balanceOf({
         contract: getContract({
             client: thirdwebClient,
-            chain: arbitrum,
-            address: contractAddressArbitrum,
+            chain: bsc,
+            address: contractAddressBsc,
         }),
         address: walletAddress,
     });
@@ -201,8 +204,8 @@ export async function POST(request: NextRequest) {
     const transactionSendToStore = transfer({
         contract: getContract({
             client: thirdwebClient,
-            chain: arbitrum,
-            address: contractAddressArbitrum,
+            chain: bsc,
+            address: contractAddressBsc,
         }),
         to: sellerWalletAddress,
         amount: clearanceUSDTBalance,

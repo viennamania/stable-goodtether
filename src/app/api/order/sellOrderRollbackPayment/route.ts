@@ -30,9 +30,10 @@ import {
 
 //import { polygonAmoy } from "thirdweb/chains";
 import {
-  polygon,
-  arbitrum,
- } from "thirdweb/chains";
+    polygon,
+    arbitrum,
+    bsc,
+} from "thirdweb/chains";
 
 import {
   privateKeyToAccount,
@@ -76,8 +77,7 @@ export const config = {
 // USDT Token (USDT)
 const tokenContractAddressUSDT = '0xc2132D05D31c914a87C6611C10748AEb04B58e8F';
 
-const contractAddressArbitrum = "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"; // USDT on Arbitrum
-
+const contractAddressBsc = "0x55d398326f99059fF775485246999027B3197955"; // USDT on BSC
 
 
 
@@ -197,7 +197,7 @@ export async function POST(request: NextRequest) {
 
       const wallet = smartWallet({
 
-        chain: arbitrum,
+        chain: bsc,
 
         ///factoryAddress: "0x655934C0B4bD79f52A2f7e6E60714175D5dd319b", // your own deployed account factory address
         sponsorGas: true,
@@ -223,7 +223,7 @@ export async function POST(request: NextRequest) {
 
       const contract = getContract({
         client,
-        chain: arbitrum,
+        chain: bsc,
         address: tokenContractAddressUSDT, // erc20 contract from thirdweb.com/explore
       });
     

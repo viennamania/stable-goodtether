@@ -1,7 +1,11 @@
 import { NextResponse, type NextRequest } from "next/server";
 
 
-import { polygon, arbitrum } from "thirdweb/chains";
+import {
+    polygon,
+    arbitrum,
+    bsc,
+} from "thirdweb/chains";
 
 
 //import { Engine } from "@thirdweb-dev/engine";
@@ -49,8 +53,7 @@ export async function POST(request: NextRequest) {
 
   const contractAddressPolygon = "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"; // USDT on Polygon
 
-  const contractAddressArbitrum = "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"; // USDT on Arbitrum
-
+  const contractAddressBsc = "0x55d398326f99059fF775485246999027B3197955"; // USDT on BSC
   const contractAddress = contractAddressPolygon;
 
 

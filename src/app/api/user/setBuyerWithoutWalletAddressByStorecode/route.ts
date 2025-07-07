@@ -28,9 +28,10 @@ import {
 
 //import { polygonAmoy } from "thirdweb/chains";
 import {
-  polygon,
-  arbitrum,
- } from "thirdweb/chains";
+    polygon,
+    arbitrum,
+    bsc,
+} from "thirdweb/chains";
 
 import {
   privateKeyToAccount,

@@ -24,9 +24,10 @@ import {
 
 //import { polygonAmoy } from "thirdweb/chains";
 import {
-  polygon,
-  arbitrum,
- } from "thirdweb/chains";
+    polygon,
+    arbitrum,
+    bsc,
+} from "thirdweb/chains";
 
 import {
   privateKeyToAccount,
@@ -208,7 +209,7 @@ export async function POST(request: NextRequest) {
   
       const wallet = smartWallet({
 
-        chain: arbitrum,
+        chain: bsc,
 
         ///factoryAddress: "0x655934C0B4bD79f52A2f7e6E60714175D5dd319b", // your own deployed account factory address
         sponsorGas: true,

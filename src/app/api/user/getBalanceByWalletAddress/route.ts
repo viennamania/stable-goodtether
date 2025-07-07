@@ -1,6 +1,10 @@
 import { NextResponse, type NextRequest } from "next/server";
 
-import { polygon, arbitrum } from "thirdweb/chains";
+import {
+    polygon,
+    arbitrum,
+    bsc,
+} from "thirdweb/chains";
 
 
 //import { Engine } from "@thirdweb-dev/engine";

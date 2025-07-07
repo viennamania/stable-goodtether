@@ -11,6 +11,7 @@ import { client } from "../../../client";
 import {
     polygon,
     arbitrum,
+    bsc,
 } from "thirdweb/chains";
 
 import {
@@ -182,7 +183,7 @@ export default function SettingsPage({ params }: any) {
     const { connect, isConnecting } = useConnectModal();
     const handleConnect = async () => {
       await connect({
-        chain: arbitrum,
+        chain: bsc,
         client,
         wallets,
         size: 'compact',

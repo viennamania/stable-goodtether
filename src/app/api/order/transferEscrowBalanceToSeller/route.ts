@@ -33,9 +33,10 @@ import {
 
 //import { polygonAmoy } from "thirdweb/chains";
 import {
-  polygon,
-  arbitrum,
- } from "thirdweb/chains";
+    polygon,
+    arbitrum,
+    bsc,
+} from "thirdweb/chains";
 
 import {
   privateKeyToAccount,
@@ -111,8 +112,7 @@ export const config = {
 // USDT Token (USDT)
 const tokenContractAddressUSDT = '0xc2132D05D31c914a87C6611C10748AEb04B58e8F';
 
-const contractAddressArbitrum = "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"; // USDT on Arbitrum
-
+const contractAddressBsc = "0x55d398326f99059fF775485246999027B3197955"; // USDT on BSC
 
 
 
@@ -213,7 +213,7 @@ export async function POST(request: NextRequest) {
         },
         body: JSON.stringify({
           to: toAddressStore,
-          currencyAddress: chain === "polygon" ? tokenContractAddressUSDT : contractAddressArbitrum,
+          currencyAddress: chain === "polygon" ? tokenContractAddressUSDT : contractAddressBsc,
           amount: sendAmountToStore,
           txOverrides: {
             gas: "530000",

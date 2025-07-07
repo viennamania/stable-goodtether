@@ -11,6 +11,7 @@ import { client } from "../client";
 import {
     polygon,
     arbitrum,
+    bsc,
 } from "thirdweb/chains";
 
 import {
@@ -267,8 +268,8 @@ export default function SettingsPage() {
                             wallets={wallets}
                             
                             accountAbstraction={{        
-                            chain: arbitrum,
-                            //chain: arbitrum,,
+                            chain: bsc,
+                            //chain: bsc,,
                             factoryAddress: "0x655934C0B4bD79f52A2f7e6E60714175D5dd319b", // polygon, arbitrum
                             gasless: true,
                             }}
