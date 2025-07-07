@@ -1117,7 +1117,7 @@ export default function Index({ params }: any) {
                     className="rounded-lg w-5 h-5"
                   />
                   <span className="text-sm md:text-lg text-white">
-                    마이 애셋
+                    내 자산
                   </span>
               </div>
 
