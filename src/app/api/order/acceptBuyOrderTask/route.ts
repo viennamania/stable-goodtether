@@ -254,7 +254,7 @@ export async function POST(request: NextRequest) {
             body: JSON.stringify({
               name: buyorder.tradeId,
               channel_url: buyorder._id,
-              cover_url: 'https://stable.makeup/icon-trade.png',
+              cover_url: 'https://www.cryptopay.beauty/icon-trade.png',
               custom_type: 'trade',
 
             }),
@@ -285,7 +285,7 @@ export async function POST(request: NextRequest) {
             body: JSON.stringify({
               name: "거래번호: #" + tradeId,
               channel_url: orderId,
-              cover_url: 'https://stable.makeup/icon-trade.png',
+              cover_url: 'https://www.cryptopay.beauty/icon-trade.png',
               custom_type: 'trade',
               user_ids: [buyerWalletAddress, sellerWalletAddress],
               data: JSON.stringify({

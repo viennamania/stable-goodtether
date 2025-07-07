@@ -1102,8 +1102,8 @@ export default function Index({ params }: any) {
   const [storeType, setStoreType] = useState('test');
   const [storeUrl, setStoreUrl] = useState('https://test.com');
   const [storeDescription, setStoreDescription] = useState('설명입니다.');
-  const [storeLogo, setStoreLogo] = useState('https://stable.makeup/logo.png');
-  const [storeBanner, setStoreBanner] = useState('https://stable.makeup/logo.png');
+  const [storeLogo, setStoreLogo] = useState('https://www.cryptopay.beauty/logo.png');
+  const [storeBanner, setStoreBanner] = useState('https://www.cryptopay.beauty/logo.png');
 
 
   const [insertingStore, setInsertingStore] = useState(false);
@@ -2571,7 +2571,7 @@ export default function Index({ params }: any) {
                                 <button
                                   onClick={() => {
                                     navigator.clipboard.writeText(
-                                      'https://stable.makeup/' + params.lang + '/' + item.storecode
+                                      'https://www.cryptopay.beauty/' + params.lang + '/' + item.storecode
                                     );
                                     toast.success('복사되었습니다');
                                   }
@@ -2583,7 +2583,7 @@ export default function Index({ params }: any) {
                                 */}
                                 <a
                                   href={
-                                    'https://stable.makeup/' + params.lang + '/' + item.storecode + '/paymaster'
+                                    'https://www.cryptopay.beauty/' + params.lang + '/' + item.storecode + '/paymaster'
                                   }
                                   target="_blank"
                                   rel="noopener noreferrer"
@@ -2595,7 +2595,7 @@ export default function Index({ params }: any) {
                                 <button
                                   onClick={() => {
                                     navigator.clipboard.writeText(
-                                      'https://stable.makeup/' + params.lang + '/' + item.storecode + '/center'
+                                      'https://www.cryptopay.beauty/' + params.lang + '/' + item.storecode + '/center'
                                     );
                                     toast.success('복사되었습니다');
                                   }
@@ -2607,7 +2607,7 @@ export default function Index({ params }: any) {
                                 */}
                                 <a
                                   href={
-                                    'https://stable.makeup/' + params.lang + '/' + item.storecode + '/center'
+                                    'https://www.cryptopay.beauty/' + params.lang + '/' + item.storecode + '/center'
                                   }
                                   target="_blank"
                                   rel="noopener noreferrer"

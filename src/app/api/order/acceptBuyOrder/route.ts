@@ -90,7 +90,7 @@ export async function POST(request: NextRequest) {
           body: JSON.stringify({
             name: tradeId,
             channel_url: orderId,
-            cover_url: 'https://stable.makeup/icon-trade.png',
+            cover_url: 'https://www.cryptopay.beauty/icon-trade.png',
             custom_type: 'trade',
 
           }),
@@ -117,7 +117,7 @@ export async function POST(request: NextRequest) {
           body: JSON.stringify({
             name: "거래번호: #" + tradeId,
             channel_url: orderId,
-            cover_url: 'https://stable.makeup/icon-trade.png',
+            cover_url: 'https://www.cryptopay.beauty/icon-trade.png',
             custom_type: 'trade',
             user_ids: [buyerWalletAddress, sellerWalletAddress],
             data: JSON.stringify({
@@ -139,7 +139,7 @@ export async function POST(request: NextRequest) {
         {
           channel_url: '685ca1512a3f834ed95e93d4',
           name: '거래번호: #96903357',
-          cover_url: 'https://stable.makeup/icon-trade.png',
+          cover_url: 'https://www.cryptopay.beauty/icon-trade.png',
           data: '{"tradeId":"96903357","buyerWalletAddress":"0x2C264C8772758A186802f2595E5869b2c991c431","sellerWalletAddress":"0x98773aF65AE660Be4751ddd09C4350906e9D88F3","sellerStorecode":"admin"}',
           member_count: 2,
           joined_member_count: 2,
@@ -164,7 +164,7 @@ export async function POST(request: NextRequest) {
           channel: {
             channel_url: '685ca1512a3f834ed95e93d4',
             name: '거래번호: #96903357',
-            cover_url: 'https://stable.makeup/icon-trade.png',
+            cover_url: 'https://www.cryptopay.beauty/icon-trade.png',
             data: '{"tradeId":"96903357","buyerWalletAddress":"0x2C264C8772758A186802f2595E5869b2c991c431","sellerWalletAddress":"0x98773aF65AE660Be4751ddd09C4350906e9D88F3","sellerStorecode":"admin"}',
             created_at: 1750901301,
             custom_type: 'trade',
