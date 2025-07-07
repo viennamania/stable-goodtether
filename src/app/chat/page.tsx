@@ -156,7 +156,7 @@ function ChatPageContent() {
   
       //console.log(result);
   
-      setBalance( Number(result) / 10 ** 6 );
+      setBalance( Number(result) / 10 ** 18 );
 
     };
 

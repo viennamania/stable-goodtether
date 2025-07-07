@@ -566,7 +566,7 @@ export default function Index({ params }: any) {
       
           //console.log(result);
       
-          setBalance( Number(result) / 10 ** 6 );
+          setBalance( Number(result) / 10 ** 18 );
         } catch (error) {
           console.error('Error:', error);
           setBalance(0);
@@ -669,7 +669,7 @@ export default function Index({ params }: any) {
         });
   
     
-        setEscrowBalance( Number(result) / 10 ** 6 );
+        setEscrowBalance( Number(result) / 10 ** 18 );
   
   
   
@@ -1255,7 +1255,7 @@ export default function Index({ params }: any) {
 
             //console.log(result);
 
-            setBalance( Number(result) / 10 ** 6 );
+            setBalance( Number(result) / 10 ** 18 );
 
 
             toast.success(Payment_request_has_been_sent);

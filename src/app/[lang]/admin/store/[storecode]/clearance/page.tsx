@@ -575,7 +575,7 @@ export default function Index({ params }: any) {
       
           //console.log(result);
       
-          setBalance( Number(result) / 10 ** 6 );
+          setBalance( Number(result) / 10 ** 18 );
         } catch (error) {
           console.error('Error:', error);
           setBalance(0);
@@ -678,7 +678,7 @@ export default function Index({ params }: any) {
         });
   
     
-        setEscrowBalance( Number(result) / 10 ** 6 );
+        setEscrowBalance( Number(result) / 10 ** 18 );
   
   
   
@@ -1396,7 +1396,7 @@ export default function Index({ params }: any) {
 
             //console.log(result);
 
-            setBalance( Number(result) / 10 ** 6 );
+            setBalance( Number(result) / 10 ** 18 );
 
 
             toast.success(Payment_request_has_been_sent);
@@ -1686,7 +1686,7 @@ export default function Index({ params }: any) {
           address: store.settlementWalletAddress,
         });
         //console.log('settlementWalletBalance result', result);
-        setSettlementWalletBalance(Number(result) / 10 ** 6);
+        setSettlementWalletBalance(Number(result) / 10 ** 18);
       };
       getSettlementWalletBalance();
     }, [store, contract]);
@@ -1707,7 +1707,7 @@ export default function Index({ params }: any) {
           address: store.adminWalletAddress,
         });
         //console.log('adminWalletBalance result', result);
-        setAdminWalletBalance(Number(result) / 10 ** 6);
+        setAdminWalletBalance(Number(result) / 10 ** 18);
       };
       getAdminWalletBalance();
     }, [store, contract]);
@@ -1726,7 +1726,7 @@ export default function Index({ params }: any) {
           address: store.sellerWalletAddress,
         });
         //console.log('sellerWalletBalance result', result);
-        setSellerWalletBalance(Number(result) / 10 ** 6);
+        setSellerWalletBalance(Number(result) / 10 ** 18);
       };
       getSellerWalletBalance();
     }, [store, contract]);

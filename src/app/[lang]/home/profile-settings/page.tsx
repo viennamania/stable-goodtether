@@ -354,7 +354,7 @@ export default function SettingsPage({ params }: any) {
     
         //console.log(result);
     
-        setBalance( Number(result) / 10 ** 6 );
+        setBalance( Number(result) / 10 ** 18 );
   
   
         await fetch('/api/user/getBalanceByWalletAddress', {
@@ -898,7 +898,7 @@ export default function SettingsPage({ params }: any) {
         //console.log('escrowWalletAddress balance', result);
 
     
-        setEscrowBalance( Number(result) / 10 ** 6 );
+        setEscrowBalance( Number(result) / 10 ** 18 );
             
 
 

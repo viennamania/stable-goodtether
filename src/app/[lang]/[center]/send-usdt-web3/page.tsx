@@ -259,7 +259,7 @@ export default function SendUsdt({ params }: any) {
   
       //console.log(result);
   
-      setBalance( Number(result) / 10 ** 6 );
+      setBalance( Number(result) / 10 ** 18 );
 
 
       await fetch('/api/user/getBalanceByWalletAddress', {
@@ -603,7 +603,7 @@ export default function SendUsdt({ params }: any) {
 
           //console.log(result);
 
-          setBalance( Number(result) / 10 ** 6 );
+          setBalance( Number(result) / 10 ** 18 );
 
         } else {
 

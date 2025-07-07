@@ -145,7 +145,7 @@ const P2PTable = () => {
   
       //console.log(result);
   
-      setBalance( Number(result) / 10 ** 6 );
+      setBalance( Number(result) / 10 ** 18 );
 
     };
 
@@ -592,7 +592,7 @@ const P2PTable = () => {
 
           //console.log(result);
 
-          setBalance( Number(result) / 10 ** 6 );
+          setBalance( Number(result) / 10 ** 18 );
 
 
           toast.success('Payment request has been sent');
